@@ -1,0 +1,49 @@
+input.hint, span.hint {
+   color:gray;
+}
+
+.placeholder-hide {
+	font-size: 0!important;
+	z-index: -1;	
+}
+
+.hintbox-container .placeholder {
+	position: relative;
+	overflow: visible;	
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 2px;
+	z-index: 1;
+	height: 20px;
+	padding: 4px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #999;
+	white-space: nowrap;
+	cursor: text;*/
+	-webkit-transition: opacity .1s,font-size .1s;
+	-moz-transition: opacity .1s,font-size .1s;
+	-o-transition: opacity .1s,font-size .1s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.hintbox-container {
+	position: relative;
+	overflow: visible;
+}
+
+.hintbox-container input {
+	position: absolute;
+	top: 0;
+}
+
+.hintbox-container input:focus+.placeholder {
+	-moz-opacity: .6;
+	opacity: .6;
+	-ms-filter: "alpha(opacity=60)";
+	filter: alpha(opacity=60);
+}
